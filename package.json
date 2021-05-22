@@ -1,0 +1,30 @@
+{
+  "name": "coda-colorado",
+  "version": "1.0.0",
+  "description": "Colorado Dragon Boat Alliance Website",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "cd server && npm run watch",
+    "install": "cd server && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasherrick/coda-colorado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholasherrick/coda-colorado/issues"
+  },
+  "homepage": "https://github.com/nicholasherrick/coda-colorado#readme",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0"
+  }
+}
